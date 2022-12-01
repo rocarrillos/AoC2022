@@ -1,7 +1,7 @@
 def getCaloriesPerElf():
     elves = []
     
-    with open('day1input.txt') as source:
+    with open('day01input.txt') as source:
         tempArray = []
         for row in source:
             if len(row) > 1:
