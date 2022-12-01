@@ -16,8 +16,7 @@ def part1():
     return max(getCaloriesPerElf())
 
 def part2():
-    elfcalories = sorted(getCaloriesPerElf())
-    return sum(elfcalories[len(elfcalories) - 3:len(elfcalories)])
+    return sum(sorted(getCaloriesPerElf())[-3:])
 
 
 print(part1(), part2())
