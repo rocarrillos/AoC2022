@@ -13,7 +13,6 @@ def compare(assignments):
     assignments = prepareAssignments(assignments)    
     containment1 = assignments[0][0] <= assignments[1][0] and assignments[0][1] >= assignments[1][1]
     containment2 = assignments[1][0] <= assignments[0][0] and assignments[1][1] >= assignments[0][1]
-    print(containment1 or containment2)
     return 1 if containment1 or containment2 else 0
 
 def part1():
