@@ -18,8 +18,6 @@ def compare(assignments):
 def part1():
     return sum(compare(i) for i in getInputs())
 
-print(part1())
-
 def compare2(assignments):
     # in the shape of [[a, b], [x, y]]
     containment1 = assignments[0][0] <= assignments[1][1] <= assignments[0][1]
@@ -28,5 +26,7 @@ def compare2(assignments):
 
 def part2():
     return sum(compare2(i) for i in getInputs())
+
+print(part1())
 
 print(part2())
