@@ -17,10 +17,6 @@ def part1():
     inputs = getInputs()
     return sum(getScore(findDuplicate(rucksack)) for rucksack in inputs)
 
-print(part1())
-
-# part 2
-
 def findTruplicate(set1, set2, set3):
     for item in set1:
         if item in set2 and item in set3:
@@ -37,3 +33,4 @@ def part2():
     return total
 
 print(part2())
+print(part1())

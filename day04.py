@@ -28,5 +28,4 @@ def part2():
     return sum(compare2(i) for i in getInputs())
 
 print(part1())
-
 print(part2())

@@ -29,8 +29,6 @@ def part1():
             stacks[destination].append(crate)
     return stacks
 
-print(part1())
-
 def part2():
     stacks, instructions = getInputs()
     for instruction in instructions:
@@ -43,5 +41,6 @@ def part2():
         stacks[destination].extend(crates)
     return stacks
 
+print(part1())
 print(' ')
 print(part2())
